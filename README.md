@@ -1,30 +1,28 @@
-📰 About the Project
-LLM News-to-Instagram Generator is a smart content automation tool that transforms public news articles into shareable content using local large language models (LLMs). It fetches news using a stealthy Selenium-based scraper, summarizes it with a senior editor-style prompt, and generates 2–3 sentence Instagram captions enriched with emojis and hashtags.
+🧠 About the LLM Instagram Post Generator
+The LLM News-to-Instagram Generator is a streamlined, intelligent pipeline designed to automate content creation from public news articles. It integrates advanced web scraping with local large language models (LLMs) to generate both editorial-style summaries and engaging Instagram captions. This system is ideal for social media managers, journalists, and content creators looking to convert real-time news into platform-ready posts with minimal effort.
 
-This project is ideal for content creators, social media managers, or researchers exploring LLM-based summarization and generation workflows.
+Built with flexibility and performance in mind, the pipeline supports multiple model backends via Ollama, customizable tone settings, and real-time multi-model comparison—offering both creative freedom and operational efficiency.
 
-🚀 Key Features
-Stealthy Web Scraper: Handles popups, ads, and cookie banners using undetected_chromedriver.
+🔑 Key Features
+Dual Output Generation: Produces both a balanced news summary and an Instagram-friendly caption from any public article.
 
-Dual Output: Generates both a balanced summary and a catchy Instagram caption per article.
+Stealth Web Scraper: Uses undetected Selenium with dynamic fallback to handle overlays, modals, and cookie banners.
 
-LLM Flexibility: Compare multiple Ollama-supported models (LLaMA 3, Gemma, DeepSeek, etc.) in parallel.
+Parallel Model Execution: Compares multiple local LLMs (LLaMA, Gemma, DeepSeek, etc.) side-by-side using threaded execution.
 
-Custom Voice: Drop in your own soft_prompt.txt to tailor the output tone (e.g., news anchor or lifestyle blogger).
+Customizable Prompting: Allows tone and voice adjustment through a soft prompt file (soft_prompt.txt).
 
-Live Progress Bars: See real-time model outputs using threaded execution and Jupyter widgets.
+Interactive Jupyter UI: Empowers users to select models, tweak generation parameters, and preview outputs in real time.
 
 🛠 Tech Stack
-Python 3.8+
+Python 3.8+ – Core logic and orchestration
 
-Jupyter Notebook
+Ollama – Local LLM hosting and model management
 
-Selenium + BeautifulSoup
+undetected-chromedriver + Selenium – Robust, stealthy web scraping
 
-Ollama (local LLM API)
+BeautifulSoup – HTML parsing and content extraction
 
-ipywidgets
+ipywidgets – Interactive controls within Jupyter Notebook
 
-ThreadPoolExecutor
-
-Let me know if you'd like me to write the rest of the README structure (e.g., Installation, Usage, Demo, Contributing).
+ThreadPoolExecutor – Parallel model processing
